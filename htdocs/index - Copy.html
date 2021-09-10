@@ -4,10 +4,10 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0, ,user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="description" content="This is a Map View Page where you can design your own maps for your mission purpose, education and disaster management. White map, photo map with label, etc.">
+  <meta name="description" content="自分で地図をデザインすることができる新たな地図閲覧サイトです。白地図や、写真に地名を重ねた地図など、学校教育現場や防災分野で活用できる地図を簡単に作成できます。">
   <meta name="keywords" content="Test Map - Vector, UN Street Map Vector">
   
-  <title>Test UN Street Map - Vector</title>
+  <title>Test Map - Vector</title>
 
   <script src='./mapbox/1.13.0/mapbox-gl-gsi.js'></script>
   <link href='./mapbox/1.13.0/mapbox-gl.css' rel='stylesheet' />
@@ -166,26 +166,26 @@
 <body>
   
   <div id="incompatible">
-    We are sorry, your browser does not work.
-    Please use the latest version of Chrome,Firefox,Safari,Edge.
+    大変申し訳ありません。
+    Chrome,Firefox,Safari,Edgeの最新バージョンでご覧ください。
   </div>
 
   <div id="main">
 
     <div id="header">
-      <a href="" class="logo" title="To the initial setting初期表示に戻ります">
-        <div class="logo-1">Test- UN Street Map Vector</div>
-        <div class="logo-2">copied from GSI map vectort</div>
+      <a href="" class="logo" title="初期表示に戻ります">
+        <div class="logo-1">地理院地図Vector</div>
+        <div class="logo-2">（試験公開）</div>
       </a>
       <div class="query-frame with-banner" style="right:186px;">
-        <form name="search" onsubmit="return false;"><input type="text" name="q" value="" placeholder="e.g.: 国土地理院 / つくば市北郷 / 36度0分0秒 140度0分0秒  / 36.00 140.00 / 54SUE83694920"></form>
+        <form name="search" onsubmit="return false;"><input type="text" name="q" value="" placeholder="例：国土地理院 / つくば市北郷 / 36度0分0秒 140度0分0秒  / 36.00 140.00 / 54SUE83694920"></form>
       </div>
       <div class="banner" 
         onclick="window.open(
-          'https://github.com/un-vector-tile-toolkit'
+          'https://github.com/gsi-cyberjapan/gsimaps-vector-stylesamples#%E5%9C%B0%E7%90%86%E9%99%A2%E5%9C%B0%E5%9B%B3vector%E4%BB%AE%E7%A7%B0%E3%81%A7%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%82%81%E3%82%8B%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E3%81%AE%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E9%9B%86'
         )" >
-        <div class="banner_logo_1">Test</div>
-        <div class="banner_logo_2">UN Street Map Vector</div>
+        <div class="banner_logo_1">色々な地図 公開中</div>
+        <div class="banner_logo_2">川だけ地図, 鉄道地図, etc...</div>
       </div>
       <a class="menu-button" href="javascript:void(0);"></a>
     </div>
@@ -194,7 +194,7 @@
       <div class="header">
         <div class="title">
           <div class="message"></div>
-          <a class="message2" href="https://geocode.csis.u-tokyo.ac.jp/home/simple-geocoding/" target="_blank" style="font-size: 7pt;"> Supported By CSIS, Tokyo University</a>
+          <a class="message2" href="https://geocode.csis.u-tokyo.ac.jp/home/simple-geocoding/" target="_blank" style="font-size: 7pt;">協力:東大CSIS</a>
         </div>
         <table>
           <tr>
@@ -220,21 +220,21 @@
           <tbody>
             <tr>
               <td style="text-align: left;"><img src="image/print/title.png"></td>
-              <td style="width: 240px;"><span class="no_print">Paper Size:</span>
+              <td style="width: 240px;"><span class="no_print">用紙サイズ：</span>
                 <select class="no_print size">
-                  <option value="A4_portrait">A4 Portrait</option>
-                  <option value="A4_landscape">A4 Landscape</option>
-                  <option value="A3_portrait">A3 Portrait</option>
-                  <option value="A3_landscape">A3 Landscape</option>
+                  <option value="A4_portrait">A4縦(標準)</option>
+                  <option value="A4_landscape">A4横(標準)</option>
+                  <option value="A3_portrait">A3縦(標準)</option>
+                  <option value="A3_landscape">A3横(標準)</option>
                 </select>
               </td>
-              <td style="width: 64px;"><button class="no_print print">Print</button></td>
-              <td style="width: 120px;"><button class="no_print back" style="white-space: nowrap;">Go back</button></td>
+              <td style="width: 64px;"><button class="no_print print">印刷</button></td>
+              <td style="width: 120px;"><button class="no_print back" style="white-space: nowrap;">元の画面に戻る</button></td>
             </tr>
             <tr>
-              <td colspan="4" class="no_print" style="text-align: left;">Please make sure that you properly set the paper size and orientation at your printer before you print. For your information, you can scroll map at this page.</td></tr>
+              <td colspan="4" class="no_print" style="text-align: left;">「用紙サイズ」で選択したサイズや向きで印刷するには、プリンターのプロパティで用紙サイズや向きを設定する必要があります。なお、地図はこのページでもスクロールできます。</td></tr>
               <tr>
-                <td colspan="4" class="no_print" style="text-align: right;"><input class="normalcheck white" type="checkbox" id="gsi_print_directionsign"><label for="gsi_print_directionsign">Adding a north arrow</label></td>
+                <td colspan="4" class="no_print" style="text-align: right;"><input class="normalcheck white" type="checkbox" id="gsi_print_directionsign"><label for="gsi_print_directionsign">方位記号を追加</label></td>
               </tr>
             </tbody>
         </table>
@@ -248,7 +248,7 @@
       <a class="toggle-button" href="javascript:void(0);"></a>
       <div class="scroll">
         <div id="recommend" class="panel">
-          <div class="header">Map Recommendations!</div>
+          <div class="header">おすすめの地図</div>
           <div class="list">
             <ul>
               <li>
@@ -261,15 +261,15 @@
             </ul>
             <div class="note"></div>
           </div>
-          <button class="detail-button">Detail</button>
-          <button class="style-add-button">Add map design</button>
-          <button class="select-layer-button">Add map/photo</button>
+          <button class="detail-button">詳細</button>
+          <button class="style-add-button">地図デザインの追加</button>
+          <button class="select-layer-button">地図や写真を追加</button>
         </div>
         <div id="layer-list" class="panel">
-          <div class="header"><span>Displayed Map</span>
-            <!--button class="new-data-button" title="Create New Style"></button>
-            <button class="open-data-button" title="Open Style File"></button>
-            <button class="select-layer-button" href="javascript:void(0);">Add map/photo</button-->
+          <div class="header"><span>表示中の地図</span>
+            <!--button class="new-data-button" title="新しいスタイルを作成"></button>
+            <button class="open-data-button" title="スタイルファイルを読み込む"></button>
+            <button class="select-layer-button" href="javascript:void(0);">地図や写真を追加</button-->
           </div>
           <div class="list">
             <ul>
@@ -278,17 +278,17 @@
                   <!--span class="type">----</span-->
                   <div class="control">
                     <button title="表示切替" class="button visible-button"></button>
-                    <button title="transparency" class="button opacity-button"></button>
-                    <button title="information" class="button info-button"></button>
-                    <button title="Delete layer" class="button remove-button"></button>
-                    <button title="Bring forward" class="button up-button"></button>
-                    <button title="Send backward" class="button down-button"></button>
+                    <button title="透過率指定" class="button opacity-button"></button>
+                    <button title="情報表示" class="button info-button"></button>
+                    <button title="このレイヤーを削除" class="button remove-button"></button>
+                    <button title="このレイヤーを上に移動" class="button up-button"></button>
+                    <button title="このレイヤーを下に移動" class="button down-button"></button>
                   </div>
                   <div class="pankuzu"></div>
                   <div class="title">----</div>
-                  <button title="Save" class="button save-button">Save</button>
-                  <button title="Edit" class="button edit-button">Edit</button>
-                  <div class="opacity-slider-frame"><span class="caption">Transparency</span><span class="value"></span>% <div class="opacity-slider"></div>
+                  <button title="保存" class="button save-button">保存</button>
+                  <button title="編集" class="button edit-button">編集</button>
+                  <div class="opacity-slider-frame"><span class="caption">不透明度</span><span class="value"></span>% <div class="opacity-slider"></div>
                   </div>
                 </div>
                 <div class="layer-edit-list-frame">
@@ -296,8 +296,8 @@
                     <div>
                       <input type="text" name="filter-query" placeholder="例：国道 / 城跡 / 広葉樹林">
                     </div>
-                    <!--button title="Save edited Style" class="save-button"></button-->
-                    <button title="Open Menu" class="menu-button"></button>
+                    <!--button title="編集したスタイルを保存" class="save-button"></button-->
+                    <button title="メニューを開く" class="menu-button"></button>
                   </div>
                   <div class="contents"></div>
                 </div>
@@ -313,8 +313,8 @@
       <a class="toggle-button" href="javascript:void(0);"></a>
       <div class="context-menu-content">
         <div class="controls">
-          <a class="button center active" href="javascript:void(0);">Map Center Information</a>
-          <a class="button click" href="javascript:void(0);">Information on Clicked loc</a>
+          <a class="button center active" href="javascript:void(0);">地図中心位置の情報</a>
+          <a class="button click" href="javascript:void(0);">クリック位置の情報</a>
         </div>
         <table>
           <tr>

@@ -440,49 +440,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "item",
-      "title": "pg-area-building",
-      "zIndex": 8,
-      "group": [
-        "all"
-      ],
-      "list": [
-        {
-          "type": "layer",
-          "minzoom": 3,
-          "maxzoom": 18,
-          "list": [
-            {
-              "type": "fill",
-              "source-layer": "building",
-              "info": {
-                "type": "fill"
-              },
-              "draw": {
-                "fill-color": "#CBC5C5",
-                "fill-style": "fill",
-                "fill-visible": true,
-                "outline-visible": false
-              }
-            }
-          ],
-          "visible": true,
-          "filter": [
-            "match",
-            [
-              "geometry-type"
-            ],
-            [
-              "Polygon",
-              "MultiPolygon"
-            ],
-            true,
-            false
-          ]
-        }
-      ]
     }
   ],
   "generator": "gsivectoreditor"

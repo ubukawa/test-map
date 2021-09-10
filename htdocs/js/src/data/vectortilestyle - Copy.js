@@ -84,11 +84,11 @@ GSIBV.VectorTileStyle = class extends MA.Class.Base {
   }
 
   get glyphs() {
-    return "https://dev-unvt.dfs.un.org/font/{fontstack}/{range}.pbf";
+    return "https://hfu.github.io/noto-jp/{fontstack}/{range}.pbf";
 
   }
   get sprite() {
-    return "https://dev-unvt.dfs.un.org/sprite_un/sprite_S";
+    return "http://gsi.pre.mediaart.co.jp/bvtile/beta/dev/sprite/sprite";
   }
 
   get styleLayers() {

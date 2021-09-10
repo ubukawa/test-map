@@ -1,7 +1,7 @@
 {
-  "name":"地理院地図Vector",
-  "short_name":"地理院地図Vector",
-  "description" : "地理院地図Vector",
+  "name":"UN Street Map Vector",
+  "short_name":"UN St Map Vector",
+  "description" : "UN Street Map Vector",
   "start_url": "./index_m.html",
   "display": "standalone",
   "orientation" : "any",
