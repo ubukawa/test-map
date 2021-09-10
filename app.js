@@ -14,7 +14,6 @@ const htdocsPath = config.get('htdocsPath')
 const privkeyPath = config.get('privkeyPath')
 const fullchainPath = config.get('fullchainPath')
 const port = config.get('port') 
-const mbtilesDir = config.get('mbtilesDir')
 const logDirPath = config.get('logDirPath')
 
 // global variables
