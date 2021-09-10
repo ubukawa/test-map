@@ -23,7 +23,7 @@ GSIBV.Map = class extends MA.Class.Base {
     this._momoryPointsNum = 1;
     this._startUp = {
       zoom: 7,
-      center: [140.084556, 36.104611]
+      center: [17.953472, 40.657946]
     };
 
     if (options) {
@@ -174,11 +174,12 @@ GSIBV.Map = class extends MA.Class.Base {
         "version": 8,
         "layers": [],
         "sources": {},
-        "glyphs": "https://maps.gsi.go.jp/xyz/noto-jp/{fontstack}/{range}.pbf"
+//        "glyphs": "https://maps.gsi.go.jp/xyz/noto-jp/{fontstack}/{range}.pbf"
+        "glyphs": "https://dev-unvt.dfs.un.org/font/{fontstack}/{range}.pbf"
 
       },
       zoom: this._startUp.zoom,
-      minZoom: 4,
+      minZoom: 0,
       maxZoom: 17,
       center: this._startUp.center,
       boxZoom: false,

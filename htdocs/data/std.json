@@ -483,6 +483,75 @@
           ]
         }
       ]
+    },
+    {
+      "type": "item",
+      "title": "test-capital",
+      "zIndex": 99,
+      "group": [
+        "all"
+      ],
+      "list": [
+        {
+          "type": "layer",
+          "minzoom": 3,
+          "maxzoom": 18,
+          "list": [
+            {
+              "type": "symbol",
+              "source-layer": "un_popp",
+              "info": {
+                "type": "symbol",
+                "text-field": "cartolb"
+              },
+              "draw": {
+                "icon-image": "PPL_National",
+                "icon-pitch-alignment": "viewport",
+                "icon-rotation-alignment": "viewport",
+                "text-pitch-alignment": "viewport",
+                "text-rotation-alignment": "viewport",
+                "text-font": [
+                  "Klokantech Noto Sans Regular"
+                ],
+                "text-offset": [
+                  1,
+                  1
+                ],
+                "text-size": [
+                  "step",
+                  [
+                    "zoom"
+                  ],
+                  9,
+                  5,
+                  11,
+                  7,
+                  12
+                ],
+                "text-color": "#3E3F40",
+                "text-halo-color": "#FFFFFF",
+                "text-halo-width": 1.333,
+                "text-visible": true,
+                "icon-visible": true,
+                "text-rotate": "auto",
+                "text-anchor": "auto",
+                "icon-group": "std",
+                "icon-allow-overlap": true,
+                "icon-size": 1
+              }
+            }
+          ],
+          "visible": true,
+          "filter": [
+            "all",
+            [
+              "==",
+              "poptyp",
+              1
+            ]
+          ]
+        }
+      ]
     }
   ],
   "generator": "gsivectoreditor"

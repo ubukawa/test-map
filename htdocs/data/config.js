@@ -166,8 +166,8 @@ GSIBV.CONFIG.Sprite = {
   "list": [
     {
       "id": "std",
-      "title": "標準地図",
-      "url": "./sprite/std"
+      "title": "UN地図",
+      "url": "./sprite/sprite_S"
     },
     {
       "id": "pale",
@@ -180,17 +180,18 @@ GSIBV.CONFIG.Sprite = {
 
 //ベクトルタイルの読み込むズーム設定(※廃止)
 GSIBV.CONFIG.VectorTileSourceList = [
-  {"minzoom":4,"maxzoom":17} // ZL4～17までそれぞれのZLのタイル使用
+//  {"minzoom":4,"maxzoom":17} // ZL4～17までそれぞれのZLのタイル使用
+  {"minzoom":0,"maxzoom":15} // ZL0～15までそれぞれのZLのタイル使用、それ以降は15が使用される
 ];
 
 //ベクトルタイルの読み込むズーム設定(※廃止)
-GSIBV.CONFIG.VectorTileSource = {"minzoom":4,"maxzoom":17};
-
+//GSIBV.CONFIG.VectorTileSource = {"minzoom":4,"maxzoom":17};
+GSIBV.CONFIG.VectorTileSource = {"minzoom":0,"maxzoom":17};
 
 /*
-//ZL14以降はZL14のタイルを使用する例
+//ZL15以降はZL15のタイルを使用する例
 GSIBV.CONFIG.VectorTileSourceList = [
-  {"minzoom":4,"maxzoom":14} // ZL4～14までそれぞれのZLのタイル使用、それ以降は14が使用される
+  {"minzoom":0,"maxzoom":15} // ZL0～15までそれぞれのZLのタイル使用、それ以降は15が使用される
 ];
 
 //ZL4,8,10,14,17のタイルを使用する例
