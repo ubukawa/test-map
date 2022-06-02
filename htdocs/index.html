@@ -434,18 +434,17 @@
               <li value="1"><a href="http://www.gsi.go.jp/bousaichiri/hinanbasho.html" target="blank">「指定緊急避難場所」について</a></li>
               <li value="2"><a href="http://www.gsi.go.jp/bousaichiri/hinanbasho-help.html" target="blank">利用方法</a></li>
               <li value="3"><a href="https://hinan.gsi.go.jp/hinanjocjp/hinanbasho/koukaidate.html" target="blank">市町村別公開日・更新日一覧</a></li>
-              <li value="4"><a href="https://geoinfo2.gsi.go.jp/contact/Inquiry2.aspx?pcode=1004&amp;bcode=100411&amp;mcode=10041101" target="blank">お問い合わせ</a></li>
             </ol>
         </div>
       </div>
-      <!-- 画像として保存 -->
+      <!-- 画像として保存 Save as image-->
       <div class="saveimage-areaselect">
         <div class="radio-frame">
-          <input type="radio" class="normalcheck saveimage-area-mode" value="screen"><label class="screen">表示されている範囲全体</label>
+          <input type="radio" class="normalcheck saveimage-area-mode" value="screen"><label class="screen">Displayed area whole</label>
         </div>
         <div class="radio-frame">
-          <input type="radio" class="normalcheck saveimage-area-mode" value="area"><label class="area">範囲を固定</label>
-          <input type="radio" class="normalcheck saveimage-area-mode" value="size"><label class="size">大きさを固定</label>
+          <input type="radio" class="normalcheck saveimage-area-mode" value="area"><label class="area">Fix the area</label>
+          <input type="radio" class="normalcheck saveimage-area-mode" value="size"><label class="size">Fix the size</label>
         </div>
 
         <div class="saveimage-size-frame">
@@ -474,19 +473,19 @@
         <div class="saveimage-area-frame">
           <table>
             <tr>
-              <th>緯度：</th>
+              <th>Latitude:</th>
               <td class="min-lat"><input type="number" step="0.000001" name="min-lat"></td>
-              <th>〜</th>
+              <th> - </th>
               <td class="max-lat"><input type="number" step="0.000001" name="max-lat"></td>
             </tr>
             <tr>
-              <th>経度：</th>
+              <th>Longitude:</th>
               <td class="min-lng"><input type="number" step="0.000001" name="min-lng"></td>
-              <th>〜</th>
+              <th> - </th>
               <td class="max-lng"><input type="number" step="0.000001" name="max-lng"></td>
             </tr>
             <tr>
-              <th>大きさ：</th>
+              <th>Size:</th>
               <td colspan="3">
                 <span class="image-width"></span>
                 <span>x</span>
@@ -500,26 +499,25 @@
       </div>
       <div class="saveimage">
         <div>
-          <input type="checkbox" class="normalcheck saveimage-credit" value="screen"><label class="screen">画像に「地理院地図」クレジットを表示</label>
+          <input type="checkbox" class="normalcheck saveimage-credit" value="screen"><label class="screen">Insert GSI's logo.(Do not check!!!)</label>
         </div>
         <div>
-          <button class="saveimage-button">画像を保存</button>
-          <button class="saveworldfile-button">ワールドファイルを保存</button>
+          <button class="saveimage-button">Export Image</button>
+          <button class="saveworldfile-button">Export worldfile</button>
         </div>
         <div class="">
-          ※保存したファイルは、国土地理院コンテンツ利用規約に従ってご利用ください。<br>
-          <a href="https://maps.gsi.go.jp/help/use.html" target="_blank">地理院タイルのご利用について</a><br>
-          <a href="https://maps.gsi.go.jp/help/howtouse.html" target="_blank">ワールドファイルについて</a>
+          Please use the exported file with ABC licesnse(TBC).<br>
+          <a href="https://www.un.org/geospatial/" target="_blank">UN Geospatial</a><br>
         </div>
         
         <div class="filename-frame">
           <div class="inner-frame">
-            <div>ファイル名を入力して下さい</div>
+            <div>File Name</div>
             <div><input type="text" class="filename" ></div>
             <table>
               <tr>
-                <td><button class="save-execute">保存</button></td>
-                <td><button class="save-cancel">キャンセル</button></td>
+                <td><button class="save-execute">Save</button></td>
+                <td><button class="save-cancel">Cancel</button></td>
               </tr>
             </table>
           </div>
@@ -528,40 +526,40 @@
       <!-- Edit -->
       <div class="edit-frame edit-line">
         <h3 class="edit-line">
-          <input type="checkbox" name="line-visible" class="normalcheck"><label class="line-visible">線を表示</label>
+          <input type="checkbox" name="line-visible" class="normalcheck"><label class="line-visible">Show line</label>
         </h3>
         <div class="edit-table-frame">
         <table class="table">
           <tr class="edit-line">
-            <th class="table line-color-title">線色</th>
+            <th class="table line-color-title">Line color</th>
             <td class="table">
               <input type="text" name="line-color" class="color" value="">
             </td>
           </tr>
           <tr class="edit-line">
-            <th class="table line-width-title">線の幅</th>
+            <th class="table line-width-title">Line width</th>
             <td class="table line-width">
             </td>
           </tr>
           <tr class="edit-line">
-            <th class="table line-dasharray-title">線の破線</th>
+            <th class="table line-dasharray-title">Line dasharray</th>
             <td class="table">
               <input type="text" name="line-dasharray" class="array" value="">
             </td>
           </tr>
           <tr class="edit-line">
-            <th class="table line-offset-title">オフセットの幅</th>
+            <th class="table line-offset-title">Line offset</th>
             <td class="table line-offset">
               <!--input type="text" name="line-offset" class="width" value=""-->
             </td>
           </tr>
           <tr class="edit-line">
-            <th class="table line-cap-title">終端の形状</th>
+            <th class="table line-cap-title">Line cap</th>
             <td class="table line-cap">
             </td>
           </tr>
           <tr class="edit-line">
-            <th class="table line-role-title">線の役割</th>
+            <th class="table line-role-title">Line role</th>
             <td class="table line-role">
             </td>
           </tr>
@@ -574,68 +572,68 @@
 
       <div class="edit-frame edit-symbol">
         <h3 class="edit-text">
-            <input type="checkbox" name="text-visible" class="normalcheck"><label class="text-visible">テキストを表示する</label>
+            <input type="checkbox" name="text-visible" class="normalcheck"><label class="text-visible">Show text</label>
             
         </h3>
         <div class="edit-table-frame">
         <table class="table">
           <tr class="edit-text">
-            <th class="table text-color-title">文字の色</th>
+            <th class="table text-color-title">Text color</th>
             <td class="table">
               <input type="text" name="text-color" class="color" value="">
             </td>
           </tr>
           <tr class="edit-text">
-            <th class="table text-size-title">文字サイズ</th>
+            <th class="table text-size-title">Text size</th>
             <td class="table text-size">
             </td>
           </tr>
           <tr class="edit-text">
-            <th class="table text-halo-color-title">縁取りの色</th>
+            <th class="table text-halo-color-title">Text halo color</th>
             <td class="table">
               <input type="text" name="text-halo-color" class="color" value="">
             </td>
           </tr>
           <tr class="edit-text">
-            <th class="table text-halo-width-title">縁取りサイズ</th>
+            <th class="table text-halo-width-title">Text halo width</th>
             <td class="table text-halo-width">
             </td>
           </tr>
           
           <tr class="edit-text">
-            <td colspan="2" class="detail-button-frame"><a href="javascript:void(0);" class="button detail-button text-detail-button">その他のテキスト設定</a></td>
+            <td colspan="2" class="detail-button-frame"><a href="javascript:void(0);" class="button detail-button text-detail-button">Other text settings</a></td>
           </tr>
           
             
           <tr class="edit-text detail">
-            <th class="table text-anchor-title">文字アンカー</th>
+            <th class="table text-anchor-title">Text anchor</th>
             <td class="table text-anchor"></td>
           </tr>
           <tr class="edit-text detail">
-            <th class="table text-offset-title">文字オフセット</th>
+            <th class="table text-offset-title">Text offset</th>
             <td class="table text-offset">
             </td>
           </tr>
           <tr class="edit-text detail">
-            <th class="table text-vertical-title">文字縦書き</th>
+            <th class="table text-vertical-title">Text vertical</th>
             <td class="table text-vertical">
             </td>
           </tr>
           <!--
           <tr class="edit-text detail">
-            <th class="table">文字の回転</th>
+            <th class="table">Text rotation</th>
             <td class="table text-rotate">
-                <input type="checkbox" name="icon-visible" class="normalcheck"><label class="icon-visible">自動</label>
+                <input type="checkbox" name="icon-visible" class="normalcheck"><label class="icon-visible">Auto</label>
             </td>
           </tr>
           -->
           <tr class="edit-text detail">
-            <th class="table text-pitch-alignment-title">ピッチ時の文字の向き</th>
+            <th class="table text-pitch-alignment-title">Text pitch alignment</th>
             <td class="table text-pitch-alignment">
             </td>
           </tr>
           <tr class="edit-text detail">
-            <th class="table text-rotation-alignment-title">回転時の文字の向き</th>
+            <th class="table text-rotation-alignment-title">Text rotation alignment</th>
             <td class="table text-rotation-alignment">
             </td>
           </tr>
@@ -643,44 +641,44 @@
         </div>
         
         <h3 class="edit-icon">
-            <input type="checkbox" name="icon-visible" class="normalcheck"><label class="icon-visible">アイコンを表示する</label>
+            <input type="checkbox" name="icon-visible" class="normalcheck"><label class="icon-visible">Show icon</label>
             
         </h3>
         
         <div class="edit-table-frame">
         <table class="table">
           <!--tr class="edit-icon">
-            <th class="table icon-image-title">アイコン画像</th>
+            <th class="table icon-image-title">Icon image</th>
             <td class="table icon-image">
             </td>
           </tr-->
           <tr class="edit-icon">
-            <th class="table icon-size-title">アイコン倍率</th>
+            <th class="table icon-size-title">Icon size</th>
             <td class="table icon-size">
             </td>
           </tr>
           <tr class="edit-icon">
-            <td colspan="2" class="detail-button-frame"><a href="javascript:void(0);" class="button detail-button icon-detail-button">その他のアイコン設定</a></td>
+            <td colspan="2" class="detail-button-frame"><a href="javascript:void(0);" class="button detail-button icon-detail-button">Other icon settings</a></td>
           </tr>
           <tr class="edit-icon detail">
-            <th class="table icon-anchor-title">アイコンアンカー</th>
+            <th class="table icon-anchor-title">Icon anchor</th>
             <td class="table icon-anchor">
             </td>
           </tr>
           <!--
           <tr class="edit-icon detail">
-            <th class="table">アイコンオフセット</th>
+            <th class="table">Icon offset</th>
             <td class="table">
             </td>
           </tr>
           -->
           <tr class="edit-icon detail">
-              <th class="table icon-pitch-alignment-title">ピッチ時のアイコンの向き</th>
+              <th class="table icon-pitch-alignment-title">Icon pitch alignment</th>
               <td class="table icon-pitch-alignment">
               </td>
             </tr>
             <tr class="edit-icon detail">
-              <th class="table icon-rotation-alignment-title">回転時のアイコンの向き</th>
+              <th class="table icon-rotation-alignment-title">Icon rotation alignment</th>
               <td class="table icon-rotation-alignment">
               </td>
             </tr>
@@ -693,23 +691,23 @@
 
       <div class="edit-frame edit-fill">
         <h3 class="edit-fill">
-          <input type="checkbox" name="fill-visible" class="normalcheck"><label class="fill-visible">塗り潰しを表示</label>
+          <input type="checkbox" name="fill-visible" class="normalcheck"><label class="fill-visible">Show fill</label>
         </h3>
         <div class="edit-table-frame">
         <table class="table">
           <tr class="edit-fill">
-            <th class="table fill-style-title">塗り潰し方法</th>
+            <th class="table fill-style-title">Fill style</th>
             <td class="table fill-style">
             </td>
           </tr>
           <tr class="edit-fill">
-            <th class="table fill-color-title">塗り潰し色</th>
+            <th class="table fill-color-title">Fill color</th>
             <td class="table">
               <input type="text" name="fill-color" class="color" value="">
             </td>
           </tr>
           <tr class="edit-fill edit-fill-hatch-bgcolor">
-            <th class="table fill-hatch-bgcolor-title">ハッチ背景色</th>
+            <th class="table fill-hatch-bgcolor-title">Fill hatch bgcolor</th>
             <td class="table">
               <input type="text" name="fill-hatch-bgcolor" class="color" value="">
             </td>
@@ -718,24 +716,24 @@
         </div>
         
         <h3 class="edit-outline">
-          <input type="checkbox" name="outline-visible" class="normalcheck"><label class="outline-visible">枠線を表示</label>
+          <input type="checkbox" name="outline-visible" class="normalcheck"><label class="outline-visible">Show outline</label>
         </h3>
         <div class="edit-table-frame">
         <table class="table">
           <tr class="edit-outline">
-            <th class="table outline-color-title">枠線色</th>
+            <th class="table outline-color-title">Outline color</th>
             <td class="table">
               <input type="text" name="outline-color" class="color" value="">
             </td>
           </tr>
           <tr class="edit-outline">
-            <th class="table outline-width-title">枠線の幅</th>
+            <th class="table outline-width-title">Outline width</th>
             <td class="table">
               <input type="text" name="outline-width" class="width" value="">
             </td>
           </tr>
           <tr class="edit-outline">
-            <th class="table outline-dasharray-title">枠線の破線</th>
+            <th class="table outline-dasharray-title">Outline dasharray</th>
             <td class="table">
               <input type="text" name="outline-dasharray" class="array" value="">
             </td>

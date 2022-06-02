@@ -308,9 +308,9 @@ GSIBV.Application = class extends MA.Class.Base {
         var li = MA.DOM.create("li");
         var stateCaption = "";
         if (item.state == "loading") {
-          stateCaption = "の情報を取得しています";
+          stateCaption = "Loading";
         } else if (item.state == "load") {
-          stateCaption = "のレイヤを地図に追加しています";
+          stateCaption = "Adding layer to map";
         }
 
         li.innerHTML = "<span>" + item.layer.title + '</span>' + stateCaption;
@@ -363,7 +363,7 @@ GSIBV.Application = class extends MA.Class.Base {
         this._map.addLayer(layerInfo.layer);
       } else {
         this._unknownLayers[info.id] = true;
-        this._map.addLayer(new GSIBV.Map.Layer.Unknown({ "id": info.id, "title": "読み込み中", "visible": visible, opacity: info.opacity }));
+        this._map.addLayer(new GSIBV.Map.Layer.Unknown({ "id": info.id, "title": "Loading", "visible": visible, opacity: info.opacity }));
       }
     }
     this._layersJSON.load();
@@ -790,7 +790,7 @@ GSIBV.Application = class extends MA.Class.Base {
 
       } catch(e) {
         console.log(e);
-        this.alert("ファイルが読み込めません。<br>データの形式、文字コードをご確認下さい。");
+        this.alert("cannot open the file.<br>Please confirm data format and text code.");
       }
     },this));
     this._newDataDialog.show();
@@ -812,7 +812,7 @@ GSIBV.Application = class extends MA.Class.Base {
 
         
       } catch(e) {
-        this.alert("ファイルが読み込めません。<br>データの形式、文字コードをご確認下さい。");
+        this.alert("cannot open the file.<br>Please confirm data format and text code.");
         return;
       }
 
@@ -848,7 +848,7 @@ GSIBV.Application = class extends MA.Class.Base {
   
         } catch(e) {
           console.log(e);
-          this.alert("ファイルが読み込めません。<br>データの形式、文字コードをご確認下さい。");
+          this.alert("cannot open the file.<br>Please confirm data format and text code.");
         }
       
       }
